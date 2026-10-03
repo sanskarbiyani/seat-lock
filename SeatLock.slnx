@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="SeatLock.Api/SeatLock.Api.csproj" />
+  <Project Path="SeatLock.LoadTest/SeatLock.LoadTest.csproj" />
+  <Project Path="SeatLock.Tests/SeatLock.Tests.csproj" />
 </Solution>
