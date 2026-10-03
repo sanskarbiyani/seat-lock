@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using Dapper;
 using Npgsql;
 using SeatLock.Api.Infrastructure.Database;
@@ -313,6 +314,85 @@ public sealed class ReservationRepository(
                 },
                 transaction,
                 cancellationToken: cancellationToken));
+        }
+
+        public async Task<int> CancelReservationAsync(
+            Guid userId,
+            Guid reservationId,
+            CancellationToken cancellationToken)
+        {
+            const string cancelSql = """
+                UPDATE reservations
+                SET status = 'cancelled',
+                    cancelled_at = NOW()
+                WHERE reservation_id = @ReservationId
+                  AND user_id = @UserId
+                  AND status = 'confirmed';
+                """;
+
+            return await connection.ExecuteAsync(
+                new CommandDefinition(
+                    cancelSql,
+                    new
+                    {
+                        ReservationId = reservationId,
+                        UserId = userId
+                    },
+                    transaction,
+                    cancellationToken: cancellationToken));
+        }
+
+        public async Task<int> ReleaseSeatsAsync(
+            Guid[] seatIds,
+            CancellationToken cancellationToken)
+        {
+            const string releaseSeatsSql = """
+                UPDATE seats
+                SET status = 'available'
+                WHERE seat_id = ANY(@SeatIds)
+                AND status = 'confirmed';
+                """;
+
+            return await connection.ExecuteAsync(new CommandDefinition(
+                releaseSeatsSql,
+                new
+                {
+                    SeatIds = seatIds
+                },
+                transaction,
+                cancellationToken: cancellationToken));
+        }
+
+        public async Task<ReservationDetails?> GetReservationDetails(
+            Guid guid, CancellationToken
+            cancellationToken)
+        {
+            const string sql = """"
+            SELECT
+                r.reservation_id,
+                r.user_id,
+                r.status,
+                array_agg(s.seat_id ORDER BY s.seat_number)::uuid[] AS seat_ids,
+                array_agg(s.seat_number ORDER BY s.seat_number)::text[] AS seat_numbers
+            FROM reservations r
+            JOIN reservation_seats rs
+                ON rs.reservation_id = r.reservation_id
+            JOIN seats s
+                ON s.seat_id = rs.seat_id
+            WHERE r.reservation_id = @ReservationId
+            GROUP BY
+                r.reservation_id,
+                r.user_id,
+                r.status;
+            """";
+
+            return await connection.QueryFirstOrDefaultAsync<ReservationDetails>(
+                new CommandDefinition(
+                    sql,
+                    new { ReservationId = guid },
+                    transaction,
+                    cancellationToken: cancellationToken)
+            );
         }
 
         public async Task CommitAsync(CancellationToken cancellationToken)

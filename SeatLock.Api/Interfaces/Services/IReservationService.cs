@@ -10,4 +10,9 @@ public interface IReservationService
         Guid userId,
         ReserveRequest request,
         CancellationToken cancellationToken);
+
+    Task<ReservationCancellationResult> ReleaseAsync(
+        Guid userId,
+        Guid reservationId,
+        CancellationToken cancellationToken);
 }

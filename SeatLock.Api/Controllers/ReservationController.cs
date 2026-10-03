@@ -70,4 +70,44 @@ public sealed class ReservationController(
             StatusCodes.Status201Created,
             response);
     }
+
+    /// <summary>Releases a confirmed reservation owned by the authenticated user.</summary>
+    [HttpPost("~/api/reservations/{id:guid}/cancel")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType<ProblemDetails>(StatusCodes.Status404NotFound)]
+    [ProducesResponseType<ProblemDetails>(StatusCodes.Status403Forbidden)]
+    [ProducesResponseType<ProblemDetails>(StatusCodes.Status409Conflict)]
+    public async Task<IActionResult> Release(
+        Guid id,
+        CancellationToken cancellationToken)
+    {
+        var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier)
+            ?? User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+        if (!Guid.TryParse(userIdClaim, out var userId) || userId == Guid.Empty)
+            return Unauthorized();
+
+        var result = await reservationService.ReleaseAsync(
+            userId,
+            id,
+            cancellationToken);
+
+        return result switch
+        {
+            ReservationCancellationResult.Succeeded => NoContent(),
+            ReservationCancellationResult.NotFound => Problem(
+                statusCode: StatusCodes.Status404NotFound,
+                title: "Reservation not found",
+                detail: "The reservation does not exist."),
+            ReservationCancellationResult.Forbidden => Problem(
+                statusCode: StatusCodes.Status403Forbidden,
+                title: "Reservation access denied",
+                detail: "You can only cancel your own reservations."),
+            ReservationCancellationResult.NotCancellable => Problem(
+                statusCode: StatusCodes.Status409Conflict,
+                title: "Reservation cannot be cancelled",
+                detail: "The reservation is no longer confirmed."),
+            _ => throw new InvalidOperationException(
+                $"Unknown reservation cancellation result: {result}.")
+        };
+    }
 }

@@ -9,6 +9,15 @@ public interface IReservationRepository
 
 public interface IReservationSession : IAsyncDisposable
 {
+    Task<int> CancelReservationAsync(
+        Guid userId,
+        Guid reservationId,
+        CancellationToken cancellationToken);
+
+    Task<int> ReleaseSeatsAsync(
+        Guid[] seatIds,
+        CancellationToken cancellationToken);
+
     Task<ReservationRules?> GetRulesAsync(
         Guid showId,
         CancellationToken cancellationToken);
@@ -63,6 +72,10 @@ public interface IReservationSession : IAsyncDisposable
         string idempotentKey,
         Guid reservationId,
         CancellationToken cancellationToken);
+
+    public Task<ReservationDetails?> GetReservationDetails(
+            Guid guid, CancellationToken
+            cancellationToken);
 
     Task CommitAsync(CancellationToken cancellationToken);
 }

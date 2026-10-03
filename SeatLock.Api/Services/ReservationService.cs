@@ -10,6 +10,72 @@ namespace SeatLock.Api.Services;
 public sealed class ReservationService(
     IReservationRepository reservationRepository) : IReservationService
 {
+    public async Task<ReservationCancellationResult> ReleaseAsync(
+        Guid userId,
+        Guid reservationId,
+        CancellationToken cancellationToken)
+    {
+        await using var session =
+            await reservationRepository.BeginAsync(cancellationToken);
+
+        var details = await session.GetReservationDetails(
+            reservationId,
+            cancellationToken);
+
+        if(details is null)
+        {
+            await session.CommitAsync(cancellationToken);
+            return ReservationCancellationResult.NotFound;
+        }
+
+        if(details.UserId != userId)
+        {
+            await session.CommitAsync(cancellationToken);
+            return ReservationCancellationResult.Forbidden;
+        }
+
+        if (!string.Equals(
+                details.Status,
+                "confirmed",
+                StringComparison.Ordinal))
+        {
+            await session.CommitAsync(cancellationToken);
+            return ReservationCancellationResult.NotCancellable;
+        }
+
+        if (details.SeatIds.Length == 0)
+        {
+            throw new InvalidOperationException(
+                "A confirmed reservation must contain at least one seat.");
+        }
+
+        var cancelledReservations = await session.CancelReservationAsync(
+            userId,
+            reservationId,
+            cancellationToken);
+
+        if (cancelledReservations == 0)
+            return ReservationCancellationResult.NotCancellable;
+        if (cancelledReservations != 1)
+        {
+            throw new InvalidOperationException(
+                "Cancelling a reservation must update exactly one reservation.");
+        }
+
+        var releasedSeats = await session.ReleaseSeatsAsync(
+            details.SeatIds,
+            cancellationToken);
+        if (releasedSeats != details.SeatIds.Length)
+        {
+            throw new InvalidOperationException(
+                "Releasing a reservation must update all of its confirmed seats.");
+        }
+
+        await session.CommitAsync(cancellationToken);
+
+        return ReservationCancellationResult.Succeeded;
+    }
+
     public async Task<ReservationResult> ReserveAsync(
         Guid showId,
         Guid userId,
