@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:5224
+
+### Issue an access token
+POST {{baseUrl}}/api/auth/token
+Content-Type: application/json
+
+{
+  "userId": "2a6a8b2e-133c-4c31-910c-f393e4d64e72"
+}
+
+### Empty user IDs are rejected
+POST {{baseUrl}}/api/auth/token
+Content-Type: application/json
+
+{
+  "userId": "00000000-0000-0000-0000-000000000000"
+}
