@@ -73,7 +73,7 @@ public sealed class ReservationController(
 
     /// <summary>Releases a confirmed reservation owned by the authenticated user.</summary>
     [HttpPost("~/api/reservations/{id:guid}/cancel")]
-    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType<ProblemDetails>(StatusCodes.Status404NotFound)]
     [ProducesResponseType<ProblemDetails>(StatusCodes.Status403Forbidden)]
     [ProducesResponseType<ProblemDetails>(StatusCodes.Status409Conflict)]
@@ -93,7 +93,7 @@ public sealed class ReservationController(
 
         return result switch
         {
-            ReservationCancellationResult.Succeeded => NoContent(),
+            ReservationCancellationResult.Succeeded => Ok(),
             ReservationCancellationResult.NotFound => Problem(
                 statusCode: StatusCodes.Status404NotFound,
                 title: "Reservation not found",

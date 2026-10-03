@@ -8,6 +8,7 @@ using SeatLock.Api.Interfaces;
 using SeatLock.Api.Interfaces.Authentication;
 using SeatLock.Api.Interfaces.Repositories;
 using SeatLock.Api.Interfaces.Services;
+using SeatLock.Api.Middleware;
 using SeatLock.Api.Repositories;
 using SeatLock.Api.Services;
 
@@ -48,8 +49,12 @@ builder.Services
     });
 
 builder.Services.AddAuthorization();
-builder.Services.AddSingleton<ITokenService>(
-    new TokenService(jwtKey, jwtIssuer, jwtAudience));
+builder.Services.AddSingleton<ITokenService>(serviceProvider =>
+    new TokenService(
+        jwtKey,
+        jwtIssuer,
+        jwtAudience,
+        serviceProvider.GetRequiredService<ILogger<TokenService>>()));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -72,7 +77,9 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 });
 
 var app = builder.Build();
+app.UseHttpsRedirection();
 
+app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -90,7 +97,5 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
-app.UseHttpsRedirection();
 
 app.Run();

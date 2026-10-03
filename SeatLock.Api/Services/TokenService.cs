@@ -14,11 +14,17 @@ public sealed class TokenService : ITokenService
     private readonly string _issuer;
     private readonly string _audience;
     private readonly SigningCredentials _signingCredentials;
+    private readonly ILogger<TokenService> _logger;
 
-    public TokenService(string signingKey, string issuer, string audience)
+    public TokenService(
+        string signingKey,
+        string issuer,
+        string audience,
+        ILogger<TokenService> logger)
     {
         _issuer = issuer;
         _audience = audience;
+        _logger = logger;
         _signingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey)),
             SecurityAlgorithms.HmacSha256);
@@ -41,8 +47,15 @@ public sealed class TokenService : ITokenService
             expiresAt.UtcDateTime,
             _signingCredentials);
 
-        return new TokenResponse(
+        var response = new TokenResponse(
             new JwtSecurityTokenHandler().WriteToken(token),
             expiresAt);
+
+        _logger.LogInformation(
+            "Issued an access token for user {UserId}, expiring at {ExpiresAt}.",
+            userId,
+            expiresAt);
+
+        return response;
     }
 }
