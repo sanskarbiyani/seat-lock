@@ -37,7 +37,12 @@ namespace SeatLock.Api.Controllers
         public async Task<IActionResult> GetShow([FromRoute] Guid showId)
         {
             // Implementation for fetching a show by ID
-            return NotFound();
+            var response = await _showService.GetShowAsync(showId);
+            if (response == null)
+            {
+                return NotFound(new { error = "Show not found." });
+            }
+            return Ok(response);
         }
     }
 }

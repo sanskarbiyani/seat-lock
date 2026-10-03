@@ -40,4 +40,19 @@ public sealed class ShowService: IShowService
             createdSeats
         );
     }
+
+    public async Task<GetShowResponse?> GetShowAsync(Guid showId)
+    {
+        var showData = await _repository.GetShowAsync(showId);
+        if (showData == null)
+            return null;
+
+        var seats = showData.Select(row => new SeatResponse(
+            row.SeatNumber,
+            row.Status
+        )).ToList();
+
+        var firstRow = showData.First();
+        return new GetShowResponse(showId, seats, firstRow.Name, firstRow.PricePaise, firstRow.PerUserSeatLimit);
+    }
 }

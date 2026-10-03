@@ -2,6 +2,7 @@ using Dapper;
 using SeatLock.Api.DTOs.Shows;
 using SeatLock.Api.Infrastructure.Database;
 using SeatLock.Api.Interfaces;
+using SeatLock.Api.Models.Shows;
 
 namespace SeatLock.Api.Repositories;
 
@@ -85,7 +86,7 @@ public sealed class ShowRepository : IShowRepository
 
             await transaction.CommitAsync();
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             await transaction.RollbackAsync();
             // Log the exception (ex) as needed
@@ -93,5 +94,40 @@ public sealed class ShowRepository : IShowRepository
         }
 
         return seatDetails;
+    }
+
+    public async Task<List<EventDetails>?> GetShowAsync(Guid showId)
+    {
+        await using var connection = _connectionFactory.CreateConnection();
+        await connection.OpenAsync();
+
+        const string querySql = """
+        SELECT
+            e.event_id,
+            s.seat_number,
+            s.status,
+            e.name,
+            e.price_paise,
+            e.per_user_seat_limit
+        FROM events e
+        LEFT JOIN seats s ON e.event_id = s.event_id
+        WHERE e.event_id = @ShowId;
+        """;
+
+        List<EventDetails> showData;
+        try
+        {
+            showData = (await connection.QueryAsync<EventDetails>(querySql, new { ShowId = showId })).ToList();
+        }
+        catch (Exception ex)
+        {
+            // Log the exception (ex) as needed
+            return null;
+        }
+
+        if (!showData.Any())
+            return null;
+    
+        return showData;
     }
 }
