@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using SeatLock.Api.Infrastructure.Database;
 using SeatLock.Api.Interfaces;
 using SeatLock.Api.Interfaces.Authentication;
+using SeatLock.Api.Interfaces.Repositories;
 using SeatLock.Api.Interfaces.Services;
 using SeatLock.Api.Repositories;
 using SeatLock.Api.Services;
@@ -59,6 +60,8 @@ builder.Services.AddHealthChecks()
     .AddCheck<PostgresHealthCheck>("PostgreSQL", tags: ["ready"]);
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
 builder.Services.AddScoped<IShowService, ShowService>();
+builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
 
 builder.Services.AddControllers();
 

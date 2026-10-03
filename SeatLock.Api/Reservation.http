@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:5224
+@showId = 00000000-0000-0000-0000-000000000000
+@token = replace-with-a-jwt
+
+### Reserve seats for a show
+POST {{baseUrl}}/api/shows/{{showId}}/reserve
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "seats": ["A1", "A2"],
+  "idempotent_key": "reserve-{{showId}}-request-1"
+}
