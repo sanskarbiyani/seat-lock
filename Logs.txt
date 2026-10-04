@@ -1,0 +1,394 @@
+2026-10-04T14:32:58.864332663Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:32:58.864376464Z       User 01a10746-d477-73d9-99a1-23369124a2a8 successfully authenticated.
+2026-10-04T14:32:58.864381774Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:32:58.864387354Z       Issued an access token for user 01a10746-d477-73d9-99a1-23369124a2a8, expiring at 10/04/2026 15:32:58 +00:00.
+2026-10-04T14:33:01.655320877Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:01.655352128Z       Created user 01a10755-165d-7298-8624-3ebccbe9d458.
+2026-10-04T14:33:01.755231728Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:01.755267109Z       Issued an access token for user 01a10755-165d-7298-8624-3ebccbe9d458, expiring at 10/04/2026 15:33:01 +00:00.
+2026-10-04T14:33:02.956508Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:02.956571131Z       Created user 01a10755-1679-773f-b584-de02a3a03040.
+2026-10-04T14:33:02.956576491Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:02.956581612Z       Issued an access token for user 01a10755-1679-773f-b584-de02a3a03040, expiring at 10/04/2026 15:33:02 +00:00.
+2026-10-04T14:33:05.664223854Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:05.664285185Z       Created user 01a10755-1676-714f-8f5b-4d3b03a26430.
+2026-10-04T14:33:06.068219408Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.068245269Z       Issued an access token for user 01a10755-1676-714f-8f5b-4d3b03a26430, expiring at 10/04/2026 15:33:05 +00:00.
+2026-10-04T14:33:06.068248249Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.068251479Z       Created user 01a10755-2551-7dd8-82bb-6312924cd53b.
+2026-10-04T14:33:06.068253679Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.068255939Z       Issued an access token for user 01a10755-2551-7dd8-82bb-6312924cd53b, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.068258179Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.068260589Z       Created user 01a10755-24f1-7512-bbd1-1a971f0ecefb.
+2026-10-04T14:33:06.068262769Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.068265299Z       Issued an access token for user 01a10755-24f1-7512-bbd1-1a971f0ecefb, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.068267539Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.068269799Z       Created user 01a10755-2551-7e91-b698-76d717b37cad.
+2026-10-04T14:33:06.06827199Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.06827418Z       Issued an access token for user 01a10755-2551-7e91-b698-76d717b37cad, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.160849735Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.160885806Z       Created user 01a10755-1de6-780b-b504-2bd1b392fc35.
+2026-10-04T14:33:06.160889646Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.160893046Z       Issued an access token for user 01a10755-1de6-780b-b504-2bd1b392fc35, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.160895786Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.160898856Z       Created user 01a10755-19fa-7b9c-92be-bfbce5c6a804.
+2026-10-04T14:33:06.160901296Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.160903806Z       Issued an access token for user 01a10755-19fa-7b9c-92be-bfbce5c6a804, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.263432303Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.263461364Z       Created user 01a10755-28d4-7ce1-bc9f-e0017d04912f.
+2026-10-04T14:33:06.353585917Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.353615698Z       Issued an access token for user 01a10755-28d4-7ce1-bc9f-e0017d04912f, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.665222932Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:06.665250003Z       Created user 01a10755-2bf1-7756-9ee7-1acbe15606d1.
+2026-10-04T14:33:06.665253713Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:06.665257263Z       Issued an access token for user 01a10755-2bf1-7756-9ee7-1acbe15606d1, expiring at 10/04/2026 15:33:06 +00:00.
+2026-10-04T14:33:06.962352809Z info: SeatLock.Api.Services.ShowService[0]
+2026-10-04T14:33:06.96237874Z       Created show 01a10755-348a-7ab7-98a7-25983f3ea107 with 10 seats and per-user limit 4.
+2026-10-04T14:33:07.339496873Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.339513104Z       Created reservation 01a10755-359f-73e7-ae26-709484e79cb6 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-1679-773f-b584-de02a3a03040 with 1 seats.
+2026-10-04T14:33:07.443417296Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.443443896Z       Created reservation 01a10755-35ca-7532-85b5-8136f23550b2 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-165d-7298-8624-3ebccbe9d458 with 1 seats.
+2026-10-04T14:33:07.545798479Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.54582479Z       Created reservation 01a10755-36cd-7409-a6a9-e6756510b57e for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-2551-7e91-b698-76d717b37cad with 1 seats.
+2026-10-04T14:33:07.631387848Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.631412008Z       Created reservation 01a10755-3668-78ae-9f77-4507fd43f945 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-1de6-780b-b504-2bd1b392fc35 with 1 seats.
+2026-10-04T14:33:07.632850794Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.632864875Z       Created reservation 01a10755-3605-7f37-b1d1-396eca43cf8f for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-19fa-7b9c-92be-bfbce5c6a804 with 1 seats.
+2026-10-04T14:33:07.633020529Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.633025859Z       Created reservation 01a10755-366a-7406-911c-daaf64fc90cf for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-2bf1-7756-9ee7-1acbe15606d1 with 1 seats.
+2026-10-04T14:33:07.64095725Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.640981341Z       Created reservation 01a10755-36cc-7ca9-b263-3307e7f69287 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-28d4-7ce1-bc9f-e0017d04912f with 1 seats.
+2026-10-04T14:33:07.706743166Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.706762257Z       Created reservation 01a10755-3761-7c56-9a4c-95e9358e6d35 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-2551-7dd8-82bb-6312924cd53b with 1 seats.
+2026-10-04T14:33:07.78939954Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.789422511Z       Created reservation 01a10755-37bb-768b-8b87-04fa92550ac7 for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-1676-714f-8f5b-4d3b03a26430 with 1 seats.
+2026-10-04T14:33:07.854407927Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:07.854427848Z       Created reservation 01a10755-37ca-73e3-a004-a9230023f41e for show 01a10755-348a-7ab7-98a7-25983f3ea107 and user 01a10755-24f1-7512-bbd1-1a971f0ecefb with 1 seats.
+2026-10-04T14:33:12.754242313Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:12.754272053Z       Created user 01a10755-3a56-7c78-9002-955dea58dda9.
+2026-10-04T14:33:12.754275364Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:12.754280324Z       Issued an access token for user 01a10755-3a56-7c78-9002-955dea58dda9, expiring at 10/04/2026 15:33:12 +00:00.
+2026-10-04T14:33:12.754283234Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:12.754285714Z       Created user 01a10755-3a49-752e-a585-556103794879.
+2026-10-04T14:33:12.853521498Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:12.853541728Z       Issued an access token for user 01a10755-3a49-752e-a585-556103794879, expiring at 10/04/2026 15:33:12 +00:00.
+2026-10-04T14:33:13.055212637Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:13.055243618Z       Created user 01a10755-3d8d-7617-8507-1720e06b0751.
+2026-10-04T14:33:13.153997279Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:13.15403102Z       Issued an access token for user 01a10755-3d8d-7617-8507-1720e06b0751, expiring at 10/04/2026 15:33:13 +00:00.
+2026-10-04T14:33:13.453898307Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:13.453915637Z       Created user 01a10755-3a55-72b3-a679-b7421816fc85.
+2026-10-04T14:33:13.45404368Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:13.454049031Z       Issued an access token for user 01a10755-3a55-72b3-a679-b7421816fc85, expiring at 10/04/2026 15:33:13 +00:00.
+2026-10-04T14:33:14.053774273Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:14.053833534Z       Created user 01a10755-3acf-7a5c-a423-545dd8455f4f.
+2026-10-04T14:33:14.053963978Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:14.053970538Z       Issued an access token for user 01a10755-3acf-7a5c-a423-545dd8455f4f, expiring at 10/04/2026 15:33:14 +00:00.
+2026-10-04T14:33:14.355165678Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:14.355185608Z       Created user 01a10755-3a4f-7f64-81ed-93298e1dac4b.
+2026-10-04T14:33:14.355189259Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:14.355192469Z       Created user 01a10755-3fde-7a48-8b60-afb86f980f02.
+2026-10-04T14:33:14.35525747Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:14.35526271Z       Issued an access token for user 01a10755-3fde-7a48-8b60-afb86f980f02, expiring at 10/04/2026 15:33:14 +00:00.
+2026-10-04T14:33:14.35526585Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:14.355268871Z       Issued an access token for user 01a10755-3a4f-7f64-81ed-93298e1dac4b, expiring at 10/04/2026 15:33:14 +00:00.
+2026-10-04T14:33:14.660212335Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:14.660239286Z       Created user 01a10755-474c-7643-86be-ec628250f7c5.
+2026-10-04T14:33:14.754039592Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:14.754064023Z       Issued an access token for user 01a10755-474c-7643-86be-ec628250f7c5, expiring at 10/04/2026 15:33:14 +00:00.
+2026-10-04T14:33:14.856555369Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:14.85658481Z       Created user 01a10755-4238-7272-8b27-fb8b7546add3.
+2026-10-04T14:33:14.85659851Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:14.85660343Z       Issued an access token for user 01a10755-4238-7272-8b27-fb8b7546add3, expiring at 10/04/2026 15:33:14 +00:00.
+2026-10-04T14:33:15.262436691Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:33:15.262464922Z       Created user 01a10755-461d-761f-9709-31ad0d547c63.
+2026-10-04T14:33:15.262523304Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:33:15.262530044Z       Issued an access token for user 01a10755-461d-761f-9709-31ad0d547c63, expiring at 10/04/2026 15:33:15 +00:00.
+2026-10-04T14:33:15.656482543Z info: SeatLock.Api.Services.ShowService[0]
+2026-10-04T14:33:15.656527305Z       Created show 01a10755-5622-7fed-b96d-65c00870aded with 1 seats and per-user limit 4.
+2026-10-04T14:33:16.232788203Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.232817653Z       Created reservation 01a10755-587b-78af-91a7-9d58bf9ab342 for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-4238-7272-8b27-fb8b7546add3 with 1 seats.
+2026-10-04T14:33:16.234002083Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.234020154Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3a49-752e-a585-556103794879 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.234023444Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.234026184Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-474c-7643-86be-ec628250f7c5 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.235423059Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.2354381Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3a4f-7f64-81ed-93298e1dac4b because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.254267787Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.254302228Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3a55-72b3-a679-b7421816fc85 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.255512568Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.255531849Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3a56-7c78-9002-955dea58dda9 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.255883978Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.255890718Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3d8d-7617-8507-1720e06b0751 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.256731179Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.256884533Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3fde-7a48-8b60-afb86f980f02 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.257450497Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.257464158Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-3acf-7a5c-a423-545dd8455f4f because one or more of 1 requested seats are unavailable.
+2026-10-04T14:33:16.483644917Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:33:16.483672298Z       Reservation rejected for show 01a10755-5622-7fed-b96d-65c00870aded and user 01a10755-461d-761f-9709-31ad0d547c63 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:23.554182306Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:23.554212127Z       User 01a10746-d477-73d9-99a1-23369124a2a8 successfully authenticated.
+2026-10-04T14:34:23.55433432Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:23.55434292Z       Issued an access token for user 01a10746-d477-73d9-99a1-23369124a2a8, expiring at 10/04/2026 15:34:23 +00:00.
+2026-10-04T14:34:30.355272903Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:30.355302724Z       Created user 01a10756-60ca-758f-9a9e-d3295afd7803.
+2026-10-04T14:34:30.355307634Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:30.355312444Z       Issued an access token for user 01a10756-60ca-758f-9a9e-d3295afd7803, expiring at 10/04/2026 15:34:29 +00:00.
+2026-10-04T14:34:30.355316685Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:30.355320405Z       Created user 01a10756-60ed-7dfa-aa76-d2b620ae38f7.
+2026-10-04T14:34:30.355324255Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:30.355328135Z       Issued an access token for user 01a10756-60ed-7dfa-aa76-d2b620ae38f7, expiring at 10/04/2026 15:34:29 +00:00.
+2026-10-04T14:34:30.355332115Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:30.355335995Z       Created user 01a10756-627d-7f99-bb0b-d1d0e6195077.
+2026-10-04T14:34:30.355339875Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:30.355343885Z       Issued an access token for user 01a10756-627d-7f99-bb0b-d1d0e6195077, expiring at 10/04/2026 15:34:29 +00:00.
+2026-10-04T14:34:30.355347755Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:30.355351675Z       Created user 01a10756-621c-78f0-8d4b-1bff49a973f0.
+2026-10-04T14:34:30.355355475Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:30.355359306Z       Issued an access token for user 01a10756-621c-78f0-8d4b-1bff49a973f0, expiring at 10/04/2026 15:34:29 +00:00.
+2026-10-04T14:34:30.355363276Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:30.355367636Z       Created user 01a10756-60f1-75ce-93c8-0d1bd0469435.
+2026-10-04T14:34:30.355372216Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:30.355376876Z       Issued an access token for user 01a10756-60f1-75ce-93c8-0d1bd0469435, expiring at 10/04/2026 15:34:29 +00:00.
+2026-10-04T14:34:31.554507809Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:31.55453912Z       Created user 01a10756-68c0-7e77-9a27-7a40c7c52d9a.
+2026-10-04T14:34:31.55457001Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:31.554574631Z       Issued an access token for user 01a10756-68c0-7e77-9a27-7a40c7c52d9a, expiring at 10/04/2026 15:34:31 +00:00.
+2026-10-04T14:34:32.9545176Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:32.954548801Z       Created user 01a10756-63ac-797b-bb98-8ef03a2c509e.
+2026-10-04T14:34:32.954651644Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:32.954655994Z       Issued an access token for user 01a10756-63ac-797b-bb98-8ef03a2c509e, expiring at 10/04/2026 15:34:32 +00:00.
+2026-10-04T14:34:32.95769301Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:32.957708551Z       Created user 01a10756-753f-71ae-93b3-3200a48648b7.
+2026-10-04T14:34:32.957822284Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:32.957827184Z       Issued an access token for user 01a10756-753f-71ae-93b3-3200a48648b7, expiring at 10/04/2026 15:34:32 +00:00.
+2026-10-04T14:34:33.163273348Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:33.163301458Z       Created user 01a10756-6473-7d8c-9687-5c0309bae350.
+2026-10-04T14:34:33.163304949Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:33.163308318Z       Issued an access token for user 01a10756-6473-7d8c-9687-5c0309bae350, expiring at 10/04/2026 15:34:33 +00:00.
+2026-10-04T14:34:33.756818662Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:33.756846272Z       Created user 01a10756-627d-7478-8e64-3c035a8f9572.
+2026-10-04T14:34:33.853551492Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:33.853579613Z       Issued an access token for user 01a10756-627d-7478-8e64-3c035a8f9572, expiring at 10/04/2026 15:34:33 +00:00.
+2026-10-04T14:34:34.15628739Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:34.156313621Z       Created user 01a10756-6791-7b1d-8925-fbf4fb8d4842.
+2026-10-04T14:34:34.156320381Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:34.156323791Z       Issued an access token for user 01a10756-6791-7b1d-8925-fbf4fb8d4842, expiring at 10/04/2026 15:34:34 +00:00.
+2026-10-04T14:34:34.553576963Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:34.553607594Z       Created user 01a10756-627d-782c-9c75-c716a02b6054.
+2026-10-04T14:34:34.553615154Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:34.553619414Z       Issued an access token for user 01a10756-627d-782c-9c75-c716a02b6054, expiring at 10/04/2026 15:34:34 +00:00.
+2026-10-04T14:34:34.954399965Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:34.954439706Z       Created user 01a10756-6ab1-78e8-aada-5f0214e184d8.
+2026-10-04T14:34:34.954510698Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:34.954518558Z       Issued an access token for user 01a10756-6ab1-78e8-aada-5f0214e184d8, expiring at 10/04/2026 15:34:34 +00:00.
+2026-10-04T14:34:35.653888142Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:35.653917633Z       Created user 01a10756-6e9e-7ffb-8f33-5598151b27e3.
+2026-10-04T14:34:35.653922814Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:35.653927303Z       Issued an access token for user 01a10756-6e9e-7ffb-8f33-5598151b27e3, expiring at 10/04/2026 15:34:35 +00:00.
+2026-10-04T14:34:35.854104724Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:35.854195516Z       Created user 01a10756-6e9e-7675-a4c7-8aaeb86db638.
+2026-10-04T14:34:35.854201916Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:35.854217737Z       Issued an access token for user 01a10756-6e9e-7675-a4c7-8aaeb86db638, expiring at 10/04/2026 15:34:35 +00:00.
+2026-10-04T14:34:35.955446551Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:35.955486452Z       Created user 01a10756-6e9b-7f6e-bb4b-86f775cd9c95.
+2026-10-04T14:34:36.054838798Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:36.054859179Z       Issued an access token for user 01a10756-6e9b-7f6e-bb4b-86f775cd9c95, expiring at 10/04/2026 15:34:35 +00:00.
+2026-10-04T14:34:36.654008425Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:36.654033605Z       Created user 01a10756-72e5-79ba-a2e9-797b9138e2aa.
+2026-10-04T14:34:36.654036445Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:36.654038975Z       Created user 01a10756-7731-72d0-9ae1-ee4d7f95b160.
+2026-10-04T14:34:36.654041495Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:36.654047955Z       Issued an access token for user 01a10756-72e5-79ba-a2e9-797b9138e2aa, expiring at 10/04/2026 15:34:36 +00:00.
+2026-10-04T14:34:36.654050626Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:36.654053436Z       Issued an access token for user 01a10756-7731-72d0-9ae1-ee4d7f95b160, expiring at 10/04/2026 15:34:36 +00:00.
+2026-10-04T14:34:36.854998885Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:36.855029786Z       Created user 01a10756-7475-7ecc-b77f-a799f6ba77a2.
+2026-10-04T14:34:36.855033586Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:36.855037146Z       Issued an access token for user 01a10756-7475-7ecc-b77f-a799f6ba77a2, expiring at 10/04/2026 15:34:36 +00:00.
+2026-10-04T14:34:36.963206036Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:36.963233607Z       Created user 01a10756-74de-7c1a-8349-dd66a483149b.
+2026-10-04T14:34:36.963243977Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:36.963247637Z       Issued an access token for user 01a10756-74de-7c1a-8349-dd66a483149b, expiring at 10/04/2026 15:34:36 +00:00.
+2026-10-04T14:34:37.223301074Z info: SeatLock.Api.Services.ShowService[0]
+2026-10-04T14:34:37.223334165Z       Created show 01a10756-9522-7b5e-b814-a8614bb7f117 with 20 seats and per-user limit 4.
+2026-10-04T14:34:37.938694044Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:37.938721325Z       Created reservation 01a10756-9724-7ee5-8b56-6e7a8086f03a for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6e9b-7f6e-bb4b-86f775cd9c95 with 1 seats.
+2026-10-04T14:34:38.534173197Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:38.534198378Z       Created reservation 01a10756-997a-7c99-a244-7a9d3424442f for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-60ca-758f-9a9e-d3295afd7803 with 1 seats.
+2026-10-04T14:34:38.830368439Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:38.83039457Z       Created reservation 01a10756-9917-739c-aca7-41747b6554bb for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-627d-7f99-bb0b-d1d0e6195077 with 1 seats.
+2026-10-04T14:34:39.030235382Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.030269363Z       Created reservation 01a10756-997a-7ad3-9ca1-89a528f18973 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6e9e-7ffb-8f33-5598151b27e3 with 1 seats.
+2026-10-04T14:34:39.13321923Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.133242141Z       Created reservation 01a10756-997b-7fc1-ae4c-e9ece5152781 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-627d-782c-9c75-c716a02b6054 with 1 seats.
+2026-10-04T14:34:39.13438458Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.134420291Z       Created reservation 01a10756-9a42-7f63-a2cc-a00591b6ce0e for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-7731-72d0-9ae1-ee4d7f95b160 with 1 seats.
+2026-10-04T14:34:39.135013056Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.135021626Z       Created reservation 01a10756-9b73-757e-bb33-9916e9717c19 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-63ac-797b-bb98-8ef03a2c509e with 1 seats.
+2026-10-04T14:34:39.135025006Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.135027706Z       Created reservation 01a10756-9aa7-7679-8f07-c3f50316bf66 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-7475-7ecc-b77f-a799f6ba77a2 with 1 seats.
+2026-10-04T14:34:39.730575101Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.730592151Z       Created reservation 01a10756-98b8-7a60-a11a-a53e4fe235db for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-627d-7478-8e64-3c035a8f9572 with 1 seats.
+2026-10-04T14:34:39.733805562Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.733818983Z       Created reservation 01a10756-9b6f-7ae6-8dfe-e18c44dadcd8 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-621c-78f0-8d4b-1bff49a973f0 with 1 seats.
+2026-10-04T14:34:39.734029548Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.734040228Z       Created reservation 01a10756-9e2b-76cf-a7db-11c80ddc404b for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-72e5-79ba-a2e9-797b9138e2aa with 1 seats.
+2026-10-04T14:34:39.734296825Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.734374587Z       Created reservation 01a10756-9e2b-7ff8-9b73-8bb25079d7f4 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6e9e-7675-a4c7-8aaeb86db638 with 1 seats.
+2026-10-04T14:34:39.734389757Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.734393428Z       Created reservation 01a10756-9c9f-78ec-90b9-4c559fc197a4 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-74de-7c1a-8349-dd66a483149b with 1 seats.
+2026-10-04T14:34:39.734473419Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.73447967Z       Created reservation 01a10756-9c9f-7a45-b0ff-af5f54592986 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-753f-71ae-93b3-3200a48648b7 with 1 seats.
+2026-10-04T14:34:39.830348748Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.830377179Z       Created reservation 01a10756-9cfe-7e7c-a70b-d770bc75237d for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-68c0-7e77-9a27-7a40c7c52d9a with 1 seats.
+2026-10-04T14:34:39.830509102Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.830516222Z       Created reservation 01a10756-9dc9-7d50-847a-ad90436d3d06 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-60ed-7dfa-aa76-d2b620ae38f7 with 1 seats.
+2026-10-04T14:34:39.933666455Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.933684635Z       Created reservation 01a10756-9f56-77e5-a9f2-9337a9f2c0b7 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6791-7b1d-8925-fbf4fb8d4842 with 1 seats.
+2026-10-04T14:34:39.935540562Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.935553252Z       Created reservation 01a10756-9f58-730a-8352-4b385850554f for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6ab1-78e8-aada-5f0214e184d8 with 1 seats.
+2026-10-04T14:34:39.936656531Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:39.936671411Z       Created reservation 01a10756-9e93-7c1e-948f-4cb26082945c for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-60f1-75ce-93c8-0d1bd0469435 with 1 seats.
+2026-10-04T14:34:40.153725939Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:40.15376295Z       Created reservation 01a10756-9f58-78ac-a2e4-7ddbcae1b179 for show 01a10756-9522-7b5e-b814-a8614bb7f117 and user 01a10756-6473-7d8c-9687-5c0309bae350 with 1 seats.
+2026-10-04T14:34:47.057240426Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:47.057279507Z       Created user 01a10756-a483-7882-9be9-c505e55e1fb4.
+2026-10-04T14:34:47.057284347Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:47.057288687Z       Issued an access token for user 01a10756-a483-7882-9be9-c505e55e1fb4, expiring at 10/04/2026 15:34:46 +00:00.
+2026-10-04T14:34:47.057291897Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:47.057296177Z       Created user 01a10756-a359-7364-932f-9fc36c93512c.
+2026-10-04T14:34:47.057300877Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:47.057305987Z       Issued an access token for user 01a10756-a359-7364-932f-9fc36c93512c, expiring at 10/04/2026 15:34:46 +00:00.
+2026-10-04T14:34:47.554236264Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:47.554264345Z       Created user 01a10756-a2f4-7c10-b574-635c18067d97.
+2026-10-04T14:34:47.554268035Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:47.554272805Z       Issued an access token for user 01a10756-a2f4-7c10-b574-635c18067d97, expiring at 10/04/2026 15:34:47 +00:00.
+2026-10-04T14:34:47.857377523Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:47.857395673Z       Created user 01a10756-a54d-79fd-8b68-ad2d9a02cacf.
+2026-10-04T14:34:47.857405274Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:47.857409223Z       Issued an access token for user 01a10756-a54d-79fd-8b68-ad2d9a02cacf, expiring at 10/04/2026 15:34:47 +00:00.
+2026-10-04T14:34:48.454377084Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:48.454404644Z       Created user 01a10756-a86c-7820-a9c0-c83a1d1c1674.
+2026-10-04T14:34:48.454408384Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:48.454412015Z       Issued an access token for user 01a10756-a86c-7820-a9c0-c83a1d1c1674, expiring at 10/04/2026 15:34:48 +00:00.
+2026-10-04T14:34:49.75355374Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:49.753595381Z       Created user 01a10756-b165-7677-8655-7ae82367063d.
+2026-10-04T14:34:49.753600231Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:49.753605661Z       Issued an access token for user 01a10756-b165-7677-8655-7ae82367063d, expiring at 10/04/2026 15:34:49 +00:00.
+2026-10-04T14:34:50.254267932Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:50.254304363Z       Created user 01a10756-a869-77aa-9253-39f904bcfba9.
+2026-10-04T14:34:50.254311033Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:50.254317893Z       Issued an access token for user 01a10756-a869-77aa-9253-39f904bcfba9, expiring at 10/04/2026 15:34:50 +00:00.
+2026-10-04T14:34:50.358453021Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:50.358482212Z       Created user 01a10756-a3b9-7057-8c06-78d890bb1f0d.
+2026-10-04T14:34:50.358486062Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:50.358489622Z       Issued an access token for user 01a10756-a3b9-7057-8c06-78d890bb1f0d, expiring at 10/04/2026 15:34:50 +00:00.
+2026-10-04T14:34:50.556546498Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:50.55659072Z       Created user 01a10756-a676-778e-a7de-d9e07f2d02bb.
+2026-10-04T14:34:50.655345681Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:50.655385832Z       Issued an access token for user 01a10756-a676-778e-a7de-d9e07f2d02bb, expiring at 10/04/2026 15:34:50 +00:00.
+2026-10-04T14:34:51.855230892Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:51.855266793Z       Created user 01a10756-a86c-74cd-9d74-40cc80935ef0.
+2026-10-04T14:34:51.855275943Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:51.855280043Z       Issued an access token for user 01a10756-a86c-74cd-9d74-40cc80935ef0, expiring at 10/04/2026 15:34:51 +00:00.
+2026-10-04T14:34:52.054195612Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:52.054221672Z       Created user 01a10756-a2f3-76e2-9f80-c35944ae0dc3.
+2026-10-04T14:34:52.054224192Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:52.054227122Z       Issued an access token for user 01a10756-a2f3-76e2-9f80-c35944ae0dc3, expiring at 10/04/2026 15:34:51 +00:00.
+2026-10-04T14:34:52.255250094Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:52.255274974Z       Created user 01a10756-a611-7a2a-918d-2d015b5f1ee2.
+2026-10-04T14:34:52.255278294Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:52.255281645Z       Issued an access token for user 01a10756-a611-7a2a-918d-2d015b5f1ee2, expiring at 10/04/2026 15:34:52 +00:00.
+2026-10-04T14:34:52.35499019Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:52.355014981Z       Created user 01a10756-a2f3-70ca-aa6f-517cb369c44d.
+2026-10-04T14:34:52.355018531Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:52.355022021Z       Issued an access token for user 01a10756-a2f3-70ca-aa6f-517cb369c44d, expiring at 10/04/2026 15:34:52 +00:00.
+2026-10-04T14:34:53.354029174Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:53.354053225Z       Created user 01a10756-a805-754e-9bf9-8a1c63a6efc1.
+2026-10-04T14:34:53.354056475Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:53.354099316Z       Issued an access token for user 01a10756-a805-754e-9bf9-8a1c63a6efc1, expiring at 10/04/2026 15:34:53 +00:00.
+2026-10-04T14:34:53.454251322Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:53.454275393Z       Created user 01a10756-a6da-75d0-b705-bb0d8deba698.
+2026-10-04T14:34:53.454285293Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:53.454288983Z       Issued an access token for user 01a10756-a6da-75d0-b705-bb0d8deba698, expiring at 10/04/2026 15:34:53 +00:00.
+2026-10-04T14:34:53.853795432Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:53.853824423Z       Created user 01a10756-a2f5-7e6b-9b25-98d0b38df6ff.
+2026-10-04T14:34:53.853865314Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:53.853869824Z       Issued an access token for user 01a10756-a2f5-7e6b-9b25-98d0b38df6ff, expiring at 10/04/2026 15:34:53 +00:00.
+2026-10-04T14:34:54.156678034Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:54.156719175Z       Created user 01a10756-a3bd-7ed9-b6bb-9869f8d3770e.
+2026-10-04T14:34:54.156723265Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:54.156726425Z       Created user 01a10756-ab25-7d05-9d2b-3d52dc750192.
+2026-10-04T14:34:54.156743355Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:54.156746835Z       Created user 01a10756-a420-734f-912e-493b73fb0326.
+2026-10-04T14:34:54.156749846Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:54.156753976Z       Issued an access token for user 01a10756-a420-734f-912e-493b73fb0326, expiring at 10/04/2026 15:34:54 +00:00.
+2026-10-04T14:34:54.156757096Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:54.156760236Z       Issued an access token for user 01a10756-a3bd-7ed9-b6bb-9869f8d3770e, expiring at 10/04/2026 15:34:54 +00:00.
+2026-10-04T14:34:54.156762776Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:54.156765456Z       Issued an access token for user 01a10756-ab25-7d05-9d2b-3d52dc750192, expiring at 10/04/2026 15:34:54 +00:00.
+2026-10-04T14:34:54.253531047Z info: SeatLock.Api.Services.AuthService[0]
+2026-10-04T14:34:54.253551467Z       Created user 01a10756-a86c-7726-a148-9f4280632fc4.
+2026-10-04T14:34:54.253554058Z info: SeatLock.Api.Services.TokenService[0]
+2026-10-04T14:34:54.253557407Z       Issued an access token for user 01a10756-a86c-7726-a148-9f4280632fc4, expiring at 10/04/2026 15:34:54 +00:00.
+2026-10-04T14:34:54.45739737Z info: SeatLock.Api.Services.ShowService[0]
+2026-10-04T14:34:54.457419571Z       Created show 01a10756-d84b-7dd9-a68a-689c357db1c6 with 1 seats and per-user limit 4.
+2026-10-04T14:34:55.354050211Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.354073262Z       Created reservation 01a10756-dad0-7dec-941a-9939b6f11237 for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a3bd-7ed9-b6bb-9869f8d3770e with 1 seats.
+2026-10-04T14:34:55.354076802Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.354079682Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a805-754e-9bf9-8a1c63a6efc1 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.356022511Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.356045051Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a483-7882-9be9-c505e55e1fb4 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.35675953Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.35678636Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a869-77aa-9253-39f904bcfba9 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.357479558Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.357494018Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a676-778e-a7de-d9e07f2d02bb because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.358219607Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.358232417Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-b165-7677-8655-7ae82367063d because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.360084234Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.360099384Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-ab25-7d05-9d2b-3d52dc750192 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.360858524Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.360869254Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a2f5-7e6b-9b25-98d0b38df6ff because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.453917081Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.453935881Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a86c-7726-a148-9f4280632fc4 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.530849149Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.53087093Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a359-7364-932f-9fc36c93512c because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.531796713Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.531813354Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a86c-7820-a9c0-c83a1d1c1674 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.533217729Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.533230919Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a2f3-70ca-aa6f-517cb369c44d because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.533848085Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.533857035Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a420-734f-912e-493b73fb0326 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.535324912Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.535338413Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a2f4-7c10-b574-635c18067d97 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.53680398Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.536826401Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a611-7a2a-918d-2d015b5f1ee2 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.538649537Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.538661567Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a2f3-76e2-9f80-c35944ae0dc3 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.539803646Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.539814166Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a6da-75d0-b705-bb0d8deba698 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.540558265Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.540568825Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a86c-74cd-9d74-40cc80935ef0 because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.542506484Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.542516405Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a3b9-7057-8c06-78d890bb1f0d because one or more of 1 requested seats are unavailable.
+2026-10-04T14:34:55.5538078Z info: SeatLock.Api.Services.ReservationService[0]
+2026-10-04T14:34:55.553825391Z       Reservation rejected for show 01a10756-d84b-7dd9-a68a-689c357db1c6 and user 01a10756-a54d-79fd-8b68-ad2d9a02cacf because one or more of 1 requested seats are unavailable.
+2026-10-04T14:49:55.296590222Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-04T14:49:55.29726796Z       Application is shutting down...
+2026-10-04T14:50:39.727829559Z warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+2026-10-04T14:50:39.72787136Z       Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-10-04T14:50:39.878123847Z warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+2026-10-04T14:50:39.878143387Z       No XML encryptor configured. Key {a55825aa-abbd-4a30-a0ad-86a9bac056a3} may be persisted to storage in unencrypted form.
+2026-10-04T14:50:40.533937798Z info: Microsoft.Hosting.Lifetime[14]
+2026-10-04T14:50:40.533955328Z       Now listening on: http://[::]:8080
+2026-10-04T14:50:40.535100174Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-04T14:50:40.535116785Z       Application started. Press Ctrl+C to shut down.
+2026-10-04T14:50:40.535901852Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-04T14:50:40.535909823Z       Hosting environment: Production
+2026-10-04T14:50:40.535913063Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-04T14:50:40.535916603Z       Content root path: /app
+2026-10-04T14:50:46.239786954Z warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+2026-10-04T14:50:46.239818775Z       Failed to determine the https port for redirect.
+2026-10-04T15:05:46.20539716Z info: Microsoft.Hosting.Lifetime[0]
+2026-10-04T15:05:46.20541779Z       Application is shutting down...
