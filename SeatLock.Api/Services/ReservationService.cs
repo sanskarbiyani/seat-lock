@@ -4,18 +4,21 @@ using SeatLock.Api.DTOs.Reservations;
 using SeatLock.Api.Interfaces.Repositories;
 using SeatLock.Api.Interfaces.Services;
 using SeatLock.Api.Models.Reservations;
+using SeatLock.Api.Observability;
 
 namespace SeatLock.Api.Services;
 
 public sealed class ReservationService(
     IReservationRepository reservationRepository,
-    ILogger<ReservationService> logger) : IReservationService
+    ILogger<ReservationService> logger,
+    ReservationMetrics rMetrics) : IReservationService
 {
     public async Task<ReservationCancellationResult> ReleaseAsync(
         Guid userId,
         Guid reservationId,
         CancellationToken cancellationToken)
     {
+        rMetrics.ReservationCancellations.Inc();
         await using var session =
             await reservationRepository.BeginAsync(cancellationToken);
 
@@ -29,6 +32,7 @@ public sealed class ReservationService(
             logger.LogInformation(
                 "Reservation cancellation rejected because reservation {ReservationId} was not found.",
                 reservationId);
+            rMetrics.ReservationCancellationRejections.WithLabels("not_found").Inc();
             return ReservationCancellationResult.NotFound;
         }
 
@@ -39,6 +43,7 @@ public sealed class ReservationService(
                 "User {UserId} attempted to cancel reservation {ReservationId} owned by another user.",
                 userId,
                 reservationId);
+            rMetrics.ReservationCancellationRejections.WithLabels("forbidden").Inc();
             return ReservationCancellationResult.Forbidden;
         }
 
@@ -52,6 +57,7 @@ public sealed class ReservationService(
                 "Reservation {ReservationId} cannot be cancelled because its status is {ReservationStatus}.",
                 reservationId,
                 details.Status);
+            rMetrics.ReservationCancellationRejections.WithLabels("not_confirmed").Inc();
             return ReservationCancellationResult.NotCancellable;
         }
 
@@ -74,6 +80,7 @@ public sealed class ReservationService(
             logger.LogInformation(
                 "Reservation {ReservationId} was no longer cancellable when the cancellation update ran.",
                 reservationId);
+            rMetrics.ReservationCancellationRejections.WithLabels("not_cancellable").Inc();
             return ReservationCancellationResult.NotCancellable;
         }
         if (cancelledReservations != 1)
@@ -107,6 +114,7 @@ public sealed class ReservationService(
             reservationId,
             userId,
             releasedSeats);
+        rMetrics.ReservationCancellationSuccesses.Inc();
         return ReservationCancellationResult.Succeeded;
     }
 
@@ -116,6 +124,7 @@ public sealed class ReservationService(
         ReserveRequest request,
         CancellationToken cancellationToken)
     {
+        rMetrics.ReservationAttempts.Inc();
         if (request.Seats.Length == 0
             || request.Seats.Any(string.IsNullOrWhiteSpace)
             || request.Seats.Distinct(StringComparer.Ordinal).Count()
@@ -125,6 +134,7 @@ public sealed class ReservationService(
                 "Reservation rejected for show {ShowId} and user {UserId} because the seat selection is invalid.",
                 showId,
                 userId);
+            rMetrics.ReservationRejections.WithLabels("invalid_seat_selection").Inc();
             return ReservationResult.Failed(
                 ReservationFailure.InvalidSeatSelection);
         }
@@ -143,6 +153,7 @@ public sealed class ReservationService(
             logger.LogInformation(
                 "Reservation rejected because show {ShowId} was not found.",
                 showId);
+            rMetrics.ReservationRejections.WithLabels("show_not_found").Inc();
             return ReservationResult.Failed(ReservationFailure.ShowNotFound);
         }
 
@@ -172,6 +183,7 @@ public sealed class ReservationService(
                     requestHash,
                     StringComparison.Ordinal))
             {
+                rMetrics.ReservationConflicts.WithLabels("idempotency_key_reused").Inc();
                 logger.LogInformation(
                     "Reservation rejected for show {ShowId} and user {UserId} because an idempotency key was reused with a different seat selection.",
                     showId,
@@ -186,6 +198,7 @@ public sealed class ReservationService(
                 existingReservation.ReservationId,
                 showId,
                 userId);
+            rMetrics.ReservationReplays.Inc();
             return ReservationResult.Succeeded(
                 ToResponse(existingReservation),
                 isReplay: true);
@@ -204,6 +217,7 @@ public sealed class ReservationService(
                 request.Seats.Length,
                 existingSeatCount,
                 rules.PerUserSeatLimit);
+            rMetrics.ReservationConflicts.WithLabels("seat_limit_exceeded").Inc();
             return ReservationResult.Failed(
                 ReservationFailure.SeatLimitExceeded);
         }
@@ -254,6 +268,7 @@ public sealed class ReservationService(
             showId,
             userId,
             request.Seats.Length);
+        rMetrics.SuccessfulReservations.Inc();
         return ReservationResult.Succeeded(new ReservationResponse(
             reservationId,
             showId,

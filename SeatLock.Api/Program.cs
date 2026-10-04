@@ -11,6 +11,8 @@ using SeatLock.Api.Interfaces.Services;
 using SeatLock.Api.Middleware;
 using SeatLock.Api.Repositories;
 using SeatLock.Api.Services;
+using Prometheus;
+using SeatLock.Api.Observability;
 
 Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
 var builder = WebApplication.CreateBuilder(args);
@@ -61,12 +63,15 @@ builder.Services.AddSingleton<ITokenService>(serviceProvider =>
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<DbConnectionFactory>();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddHealthChecks()
     .AddCheck<PostgresHealthCheck>("PostgreSQL", tags: ["ready"]);
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
 builder.Services.AddScoped<IShowService, ShowService>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddSingleton<ReservationMetrics>();
+builder.Services.AddSingleton<ApplicationMetrics>();
 
 builder.Services.AddControllers();
 
@@ -77,18 +82,24 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 });
 
 var app = builder.Build();
+
+app.UseExceptionHandler();
+
 app.UseHttpsRedirection();
 
 app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapHealthChecks("/health/live");
+app.UseHttpMetrics();
 
+app.MapHealthChecks("/health/live");
 app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     Predicate = check => check.Tags.Contains("ready")
 });
+
+app.MapMetrics();
 
 app.MapControllers();
 
