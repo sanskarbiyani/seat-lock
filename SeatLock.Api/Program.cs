@@ -64,6 +64,7 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<DbConnectionFactory>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 builder.Services.AddHealthChecks()
     .AddCheck<PostgresHealthCheck>("PostgreSQL", tags: ["ready"]);
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
