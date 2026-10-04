@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# .NET build output
+**/bin/
+**/obj/
+
+# Test results
+**/TestResults/
+**/*.trx
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+
+# Documentation
+*.md
+
+# Local configuration / secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/*.user
+**/*.suo
+
+# Environment files
+.env
+.env.*
+
+# Load-test generated output
+**/results/
+**/reports/
