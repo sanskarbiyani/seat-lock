@@ -30,6 +30,24 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+  
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: seatlock-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    depends_on:
+      - api
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: seatlock-grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
 
 volumes:
   postgres_data:
