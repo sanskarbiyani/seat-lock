@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using SeatLock.Api.DTOs.Authentication;
 using SeatLock.Api.Interfaces.Authentication;
+using SeatLock.Api.Models;
 
 namespace SeatLock.Api.Services;
 
@@ -25,27 +26,40 @@ public sealed class TokenService : ITokenService
         _issuer = issuer;
         _audience = audience;
         _logger = logger;
+
         _signingCredentials = new SigningCredentials(
-            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey)),
+            new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(signingKey)),
             SecurityAlgorithms.HmacSha256);
     }
 
-    public TokenResponse CreateToken(Guid userId)
+    public TokenResponse CreateToken(User user)
     {
         var issuedAt = DateTimeOffset.UtcNow;
         var expiresAt = issuedAt.Add(TokenLifetime);
+
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            new Claim(
+                JwtRegisteredClaimNames.Sub,
+                user.UserId.ToString()),
+
+            new Claim(
+                JwtRegisteredClaimNames.Jti,
+                Guid.CreateVersion7().ToString()),
+
+            new Claim(
+                ClaimTypes.Role,
+                user.Role)
         };
+
         var token = new JwtSecurityToken(
-            _issuer,
-            _audience,
-            claims,
-            issuedAt.UtcDateTime,
-            expiresAt.UtcDateTime,
-            _signingCredentials);
+            issuer: _issuer,
+            audience: _audience,
+            claims: claims,
+            notBefore: issuedAt.UtcDateTime,
+            expires: expiresAt.UtcDateTime,
+            signingCredentials: _signingCredentials);
 
         var response = new TokenResponse(
             new JwtSecurityTokenHandler().WriteToken(token),
@@ -53,7 +67,7 @@ public sealed class TokenService : ITokenService
 
         _logger.LogInformation(
             "Issued an access token for user {UserId}, expiring at {ExpiresAt}.",
-            userId,
+            user.UserId,
             expiresAt);
 
         return response;

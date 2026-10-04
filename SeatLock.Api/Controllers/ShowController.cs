@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SeatLock.Api.DTOs.Shows;
@@ -15,6 +16,7 @@ namespace SeatLock.Api.Controllers
             _showService = showService;
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> CreateShow([FromBody] CreateShowRequest request)
         {

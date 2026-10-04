@@ -51,28 +51,36 @@ builder.Services
     });
 
 builder.Services.AddAuthorization();
-builder.Services.AddSingleton<ITokenService>(serviceProvider =>
-    new TokenService(
-        jwtKey,
-        jwtIssuer,
-        jwtAudience,
-        serviceProvider.GetRequiredService<ILogger<TokenService>>()));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<DbConnectionFactory>();
+builder.Services.AddSingleton<ReservationMetrics>();
+builder.Services.AddSingleton<ApplicationMetrics>();
+
+builder.Services.AddSingleton<ITokenService>(serviceProvider =>
+    new TokenService(
+        jwtKey,
+        jwtIssuer,
+        jwtAudience,
+        serviceProvider.GetRequiredService<ILogger<TokenService>>()
+    )
+);
+
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 builder.Services.AddHealthChecks()
     .AddCheck<PostgresHealthCheck>("PostgreSQL", tags: ["ready"]);
+
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
 builder.Services.AddScoped<IShowService, ShowService>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
-builder.Services.AddSingleton<ReservationMetrics>();
-builder.Services.AddSingleton<ApplicationMetrics>();
+builder.Services.AddScoped<IPasswordService, PasswordService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddControllers();
 
